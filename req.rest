@@ -1,0 +1,51 @@
+get http://localhost:5000/api/users
+
+####
+
+get http://localhost:5000/api/tokens
+
+### Sign Up route
+POST http://localhost:5000/api/signup HTTP/1.1
+Content-Type: application/json
+
+{
+    "name" : "sayfx" , 
+    "password" : "hello"
+}
+
+
+### Login ROute
+POST http://localhost:5000/api/login HTTP/1.1
+Content-Type: application/json
+
+{
+    "name" : "sayfx" , 
+    "password" : "hello"
+}
+
+#### Refresh Your Token 
+
+POST http://localhost:5000/api/refreshtoken 
+
+
+#### Disonnect from this device
+DELETE  http://localhost:5000/api/signout
+
+#### Disconnect from all devices  
+
+DELETE  http://localhost:5000/api/logalldevicesout 
+Content-Type: application/json
+
+{
+    "password" : "heawawqllo" 
+}
+
+
+### Protected Route 
+
+GET http://localhost:5000/api/protected
+
+##### User Infos 
+
+GET  http://localhost:5000/api/me
+
