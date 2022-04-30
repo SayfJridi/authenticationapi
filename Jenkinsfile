@@ -10,6 +10,10 @@ pipeline {
             steps {
                 sh 'npm i'
             }
-        }
+          stage('Launching App') {
+            steps {
+                sh 'node server'
+            }
+          }
+          }
     }
-}
