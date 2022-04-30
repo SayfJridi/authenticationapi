@@ -1,11 +1,15 @@
 pipeline {
     agent any
     stages {
-        stage('verfiy Installation') {
+        stage('Verify Installation Of Nodejs') {
             steps {
                 sh 'node --version'
             }
         }
-        
+          stage('Installing Packages') {
+            steps {
+                sh 'npm i'
+            }
+        }
     }
 }
