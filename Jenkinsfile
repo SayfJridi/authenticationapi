@@ -1,10 +1,11 @@
 pipeline {
     agent any
     stages {
-        stage('build') {
+        stage('verfiy Installation') {
             steps {
                 sh 'node --version'
             }
         }
+        
     }
 }
