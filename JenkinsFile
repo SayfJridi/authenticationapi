@@ -1,0 +1,5 @@
+stages {
+    stage('build'){
+        sh 'npm i'
+    }
+}
