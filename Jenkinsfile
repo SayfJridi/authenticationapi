@@ -13,6 +13,6 @@ pipeline {
         }
         stage('Launching App') {
             steps {
-                sh 'URI="mongodb+srv://sayf:sayf12@cluster0.lnrhp.mongodb.net/myFirstDatabase?retryWrites=true&w=majority" node app'
+                sh 'npm run test'
             }}}
         }
