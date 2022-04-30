@@ -6,15 +6,13 @@ pipeline {
                 sh 'node --version'
             }
         }
-          stage('Installing Packages') {
+        stage('Installing Packages') {
             steps {
                 sh 'npm i'
             }
-            }
-          stage('Launching App') {
+        }
+        stage('Launching App') {
             steps {
                 sh 'node server'
-            }
-          }
-          
-    }
+            }}}
+        }
